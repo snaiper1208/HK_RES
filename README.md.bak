@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <ApplicationRevision>218</ApplicationRevision>
+    <ApplicationVersion>1.0.0.218</ApplicationVersion>
+    <BootstrapperEnabled>True</BootstrapperEnabled>
+    <Configuration>Release</Configuration>
+    <CreateDesktopShortcut>True</CreateDesktopShortcut>
+    <CreateWebPageOnPublish>True</CreateWebPageOnPublish>
+    <GenerateManifests>true</GenerateManifests>
+    <Install>True</Install>
+    <InstallFrom>Web</InstallFrom>
+    <InstallUrl>http://172.18.30.12:1000/</InstallUrl>
+    <IsRevisionIncremented>False</IsRevisionIncremented>
+    <IsWebBootstrapper>True</IsWebBootstrapper>
+    <MapFileExtensions>True</MapFileExtensions>
+    <OpenBrowserOnPublish>False</OpenBrowserOnPublish>
+    <Platform>Any CPU</Platform>
+    <ProductName>DDM MES DEV</ProductName>
+    <PublishDir>bin\Release\netcoreapp3.1\app.publish\</PublishDir>
+    <PublishUrl>D:\Web\DDM_MES_DEV\</PublishUrl>
+    <PublisherName>대동모빌리티 개발팀</PublisherName>
+    <PublishProtocol>ClickOnce</PublishProtocol>
+    <PublishReadyToRun>False</PublishReadyToRun>
+    <PublishSingleFile>False</PublishSingleFile>
+    <SelfContained>False</SelfContained>
+    <SignatureAlgorithm>(없음)</SignatureAlgorithm>
+    <SignManifests>False</SignManifests>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UpdateEnabled>True</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateRequired>False</UpdateRequired>
+    <WebPageFileName>Publish.html</WebPageFileName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PublishFile Include="DDM.ico">
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>true</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevHistory.txt">
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>true</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="LogWriter\CSLogTableAlter.txt">
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>true</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="LogWriter\TABLECREATEION.txt">
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>true</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="sqlSample.xml">
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>true</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Storage\SQLSTORE_SQL.txt">
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>true</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\**\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="alert\**\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.NetCore.DesktopRuntime.3.1.x86">
+      <Install>true</Install>
+      <ProductName>.NET?Core?데스크톱?런타임 3.1.32 (x86)</ProductName>
+    </BootstrapperPackage>
+  </ItemGroup>
+</Project>
